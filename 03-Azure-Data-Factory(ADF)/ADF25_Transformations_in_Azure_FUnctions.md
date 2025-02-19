@@ -54,6 +54,7 @@
 2. Click on Azure Functions > Click on Create Function
 3. Click on HTTP trigger > Add http trigger function to an existing file > name it as etl > Select Anonymous >
 4. Change etl code as shown below > below logging.info line delete all the code add below code
+5. Note: Change Azure SQL Database Servername/Database Name/UserName/Password
 ```py
 connection_string = "Driver={ODBC Driver 18 for SQL Server};Server=tcp:b2410asdbserver.database.windows.net,1433;Database=b2410asdb;Uid=sadmin;Pwd=RRitec123;Encrypt=yes;TrustServerCertificate=yes;Connection Timeout=30;"
     query = "select * from dbo.emp"  
