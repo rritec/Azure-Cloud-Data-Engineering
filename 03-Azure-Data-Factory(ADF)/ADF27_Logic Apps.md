@@ -5,13 +5,15 @@
 ![image](https://user-images.githubusercontent.com/20516321/208333982-d43d8332-1a6d-44af-809d-d26f25204ce2.png)
 
 1. In search box type **Logic Apps** > Under **services** > Click on **Logic Apps**
-2. Click on **Add** > Provide required information as for your subscription
-3. ![image](https://user-images.githubusercontent.com/20516321/209438015-aaf01251-0a7c-4f75-93f8-5ac4e009cd2d.png)
+2. Click on **Add** > Under **Consumption** > Select **Multi-tenant** > Click on **Select**
+3. Provide required information as for your subscription
+4. ![image](https://user-images.githubusercontent.com/20516321/209438015-aaf01251-0a7c-4f75-93f8-5ac4e009cd2d.png)
 3. Click on **review&create**
-4. After Deployment completed > click on **Goto resource** > Click on **ADD**
-5. Under **Start with a common trigger** > Click on **When a HTTP request is received**
+4. After Deployment completed > click on **Goto resource** > Click on **Edit**
+5. Click on **Add a Trigger** > Search for  **When a HTTP request is received**
 
-    ![image](https://user-images.githubusercontent.com/20516321/209438373-8aba531f-9851-4634-a768-c27fe2be56dd.png) 
+    ![image](https://github.com/user-attachments/assets/679623fd-925f-4ffb-8dd4-dc9993569343)
+ 
     
 6. Under **Request body json Schema** > Copy and paste below **json** code 
 
