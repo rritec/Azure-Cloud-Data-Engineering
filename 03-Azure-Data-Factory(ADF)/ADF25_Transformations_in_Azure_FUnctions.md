@@ -87,7 +87,7 @@ pyodbc
 8. Create target table with below DDL
 ```sql
 create table dbo.tgt_azure_fun(
-ENAME varchar,
+ENAME varchar(100),
 SAL int,
 COMM int,
 TOTALSAL int )
