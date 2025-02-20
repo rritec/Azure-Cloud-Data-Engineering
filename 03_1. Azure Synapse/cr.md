@@ -1,0 +1,22 @@
+# How to Create an Azure Synapse Workspace  
+
+## Step 1: Sign in to Azure Portal  
+1. Go to [Azure Portal](https://portal.azure.com/).  
+2. Search for **"Azure Synapse Analytics"** in the search bar.  
+
+## Step 2: Create a New Synapse Workspace  
+1. Click on **"Create a resource"** → Select **"Azure Synapse Analytics"**.  
+2. Click **"Create"**.  
+
+## Step 3: Configure the Synapse Workspace  Basics Tab
+![image](https://github.com/user-attachments/assets/ec8c0e5b-4574-4a08-9962-51c9ecda214e)
+
+## Step 4: Configure Security Tab
+
+ ![image](https://github.com/user-attachments/assets/1bb95c74-bda5-46bf-a62d-37d7a5cf795d)
+
+## Step 5: Review and Create  
+1. Click **"Review + create"**.  
+2. Wait for validation to pass.  
+3. Click **"Create"** to deploy your Synapse workspace.
+
