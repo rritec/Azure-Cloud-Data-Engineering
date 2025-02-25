@@ -57,6 +57,27 @@
 4. Map this trigger to any pipeline.
 ## Questions
 1. Difference between tumbling window trigger and the schedule trigger
+2. How to start or stop triggers using script ?
 ## Answers
 1. [Trigger type comparison](https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers#trigger-type-comparison)
+2. we can use power shell script
+
+``` sh
+$DataFactoryName="b25janadf"
+$ResourceGroupName="b25janrg"
+$DataFactoryName
+$ResourceGroupName
+
+$triggersADF = Get-AzDataFactoryV2Trigger -DataFactoryName $DataFactoryName -ResourceGroupName $ResourceGroupName
+
+$triggersADF | ForEach-Object { Stop-AzDataFactoryV2Trigger -ResourceGroupName $ResourceGroupName -DataFactoryName $DataFactoryName -Name $_.name -Force }
+
+$triggersADF | ForEach-Object { Start-AzDataFactoryV2Trigger -ResourceGroupName $ResourceGroupName -DataFactoryName $DataFactoryName -Name $_.name -Force }
+
+```
+
+    - Refer
+    - https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery#manually-promote-a-resource-manager-template-for-each-environment
+    - https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-automate-azure-pipelines#updating-active-triggers
+
 
