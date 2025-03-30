@@ -118,7 +118,7 @@ select * from emp_ext;
 9. type `:wq!`
 10. in hive terminal type 
     ``` sql
-    load data local inpath '/home/cloudera/Desktop/emp_ext.txt' into table emp;
+    load data local inpath '/home/cloudera/Desktop/emp_ext.txt' into table emp_ext;
     ```
 11. the file '/home/cloudera/Desktop/emp.txt' available in this location?
     - Yes
