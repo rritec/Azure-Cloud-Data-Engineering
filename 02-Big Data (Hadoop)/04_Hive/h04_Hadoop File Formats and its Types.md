@@ -13,7 +13,7 @@
          fields terminated by ',';
         ```
         ``` sql
-        load data local inpath '/home/cloudera/Desktop/b2023jand/dept.txt into table dept_text;
+        load data local inpath '/home/cloudera/Desktop/b2023jand/dept.txt' into table dept_text;
 
         ```
     2. load data from table to orc storage tale
