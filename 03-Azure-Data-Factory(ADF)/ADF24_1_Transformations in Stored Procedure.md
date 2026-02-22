@@ -54,14 +54,18 @@ INSERT INTO [dbo].[EMP] VALUES (1234, 'Ram', 'CLERK', 7782, '23-JAN-1982', 1400,
 
 
 ```sql
--- if already procedure available drop it.
-DROP PROCEDURE emp_total_sal
+-- Drop procedure if it exists
+IF OBJECT_ID('dbo.emp_total_sal', 'P') IS NOT NULL
+    DROP PROCEDURE dbo.emp_total_sal;
+GO
 
 -- create procedure
 CREATE PROCEDURE emp_total_sal
 AS
 BEGIN
-drop table [dbo].ResultTable
+-- Drop ResultTable if it exists
+IF OBJECT_ID('dbo.ResultTable', 'U') IS NOT NULL
+  DROP TABLE dbo.ResultTable;
 select empno,ename,sal,comm,sal+isnull(comm,0) as total_sal 
 into ResultTable
 from emp
